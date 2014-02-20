@@ -13,7 +13,7 @@ See the Apache Version 2.0 License for specific language governing permissions a
 
     if (typeof root.define === 'function' && root.define.amd) {
         // AMD. Register as an anonymous module.
-        root.define(['knockout'], factory);
+        define(['knockout'], factory);
     } else if (typeof module !== 'undefined') {
         // Node. Does not work with strict CommonJS, but
         // only CommonJS-like enviroments that support module.exports,
